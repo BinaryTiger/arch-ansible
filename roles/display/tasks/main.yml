@@ -1,0 +1,42 @@
+---
+- name: Install xorg
+  pacman:
+    state: present
+    name:
+      - xorg-server
+      - xorg-init
+      - xorg-font-util
+      - xorg-fonts-encondings
+      - xterm
+    tags:
+      - xorg
+
+- name: Install fonts
+  pacman:
+    state: present
+    name:
+      - adobe-source-code-pro-fonts
+      - noto-fonts-emoji
+      - otf-font-awesome
+      - otf-font-awesome4
+      - terminus-font
+      - ttf-fira-mono
+      - ttf-font-awesome
+      - ttf-font-awesome-4
+      - ttf-inconsolata
+      - ttf-roboto
+    tags: fonts
+
+- name: Install window manager
+  pacman:
+    state: present
+    name:
+      - i3-gaps
+      - i3blocks
+
+- name: Install background manager
+  pacman:
+    state: present
+    name:
+      - nitrogen
+

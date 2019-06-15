@@ -1,0 +1,20 @@
+---
+- name: Install python packages
+  pacman:
+    state: present
+    name:
+      - python-greenlet
+      - python-neovim
+      - python-pywal
+    tags:
+      - python-utils
+
+- name: Install utils
+  pacman:
+    state: present
+    name:
+      - curl
+      - highlight
+      - maim
+      - wget
+

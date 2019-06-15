@@ -1,0 +1,10 @@
+---
+  - hosts: pc
+    become: yes
+    roles:
+      - { role: base, tags: ['base'] }
+      - { role: display, tags: ['display'] }
+      - { role: utils, tags: ['utils'] }
+      - { role: editors, tags: ['editors'] }
+      - { role: config, tags: ['config'] }
+

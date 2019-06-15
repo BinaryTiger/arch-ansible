@@ -1,0 +1,10 @@
+---
+- name: Full system upgrade
+  hosts: control
+  become: yes
+
+  tasks:
+    - name: full system upgrade
+      pacman:
+        update_cache: yes
+        upgrade: yes

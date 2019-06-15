@@ -1,0 +1,8 @@
+user:
+    name: binarytiger
+    uid: 1000
+    group: users
+    shell: /usr/bin/zsh
+
+dotfiles:
+    url: git@github.com:BinaryTiger/archdotfiles.git

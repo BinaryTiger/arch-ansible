@@ -1,0 +1,9 @@
+---
+- name: Install editors
+  pacman:
+    state: present
+    name:
+      - vim
+      - neovim
+    tags:
+      - editors
