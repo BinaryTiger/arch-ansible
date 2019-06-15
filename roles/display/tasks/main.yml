@@ -8,6 +8,7 @@
       - xorg-font-util
       - xorg-fonts-encondings
       - xterm
+      - rxvt-unicode
     tags:
       - xorg
 
@@ -21,7 +22,8 @@
       - ttf-fira-mono
       - ttf-inconsolata
       - ttf-roboto
-    tags: fonts
+    tags:
+      - fonts
 
 - name: Install window manager
   pacman:
@@ -29,10 +31,21 @@
     name:
       - i3-gaps
       - i3blocks
+    tags:
+      - wm
 
 - name: Install background manager
   pacman:
     state: present
     name:
       - nitrogen
+    tags:
+      - nitrogen
 
+- name: Install wm utils
+  pacman:
+    state: present
+    name:
+      - rofi
+      - ranger
+      - w3m

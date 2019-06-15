@@ -9,4 +9,5 @@
       - otf-font-awesome-4
       - ttf-font-awesome-4
       - polybar
+      - unclutter-xfixes-git
       - yay
