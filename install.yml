@@ -7,4 +7,4 @@
       - { role: utils, tags: ['utils'] }
       - { role: editors, tags: ['editors'] }
       - { role: config, tags: ['config'] }
-
+      - { role: aur, tags: ['aur'] }

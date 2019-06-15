@@ -17,12 +17,8 @@
     name:
       - adobe-source-code-pro-fonts
       - noto-fonts-emoji
-      - otf-font-awesome
-      - otf-font-awesome4
       - terminus-font
       - ttf-fira-mono
-      - ttf-font-awesome
-      - ttf-font-awesome-4
       - ttf-inconsolata
       - ttf-roboto
     tags: fonts

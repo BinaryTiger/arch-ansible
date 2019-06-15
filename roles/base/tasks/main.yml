@@ -1,7 +1,7 @@
 ---
 - name: Copy pacman configuration
-  templates: 
-    src: pacman.conf 
+  templates:
+    src: pacman.conf
     dest: "/etc/pacman.conf"
   when: inventory_hostname in groups['pc']
 
@@ -24,8 +24,14 @@
     name:
       - python
       - base-devel
+      - git
     tags:
       - packages
+
+- name: Add user to wheel group
+  user: name={{ user.name }} groups=wheel append=yes
+  tags:
+    - sudo
 
 - name: Ensure UTF8 US locale
   locale_gen:

@@ -1,0 +1,12 @@
+---
+- name: Install aur packages
+  aur:
+    user: {{ user.name }}
+    dir: /tmp
+    name:
+      - discord
+      - gotop
+      - otf-font-awesome-4
+      - ttf-font-awesome-4
+      - polybar
+      - yay
